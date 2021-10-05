@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NANTOKA Works</title>
+  <meta name="description" content="NANTOKA Worksは新規サイト制作や運用に強いWeb制作会社です。サイト作りはお客様の夢を叶えること。だからこそ成果を出すサイトを全力でお作りします。" />
+  <meta name="author" content="Maru" />
+  <link rel="canonical" href="https://oneoneniaoniao.github.io/my_profile/" />
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- reset.css destyle
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" /> -->
+  <!-- style.css -->
+  <link rel="stylesheet" href="./scss/style.css" />
+</head>
+
+<body>
+  <header class="l-header">
+    <button class="l-header__navSP" type="button" id="js-menuButton">
+      <div class="c-hamburger">
+        <span class="c-hamburger__line"></span>
+      </div>
+      <span class="c-menuButton__text">メニュー</span>
+    </button>
+
+    <div class="l-header__navPC">
+      <h1 class="c-logo"><a class="c-logo__inner u-text--22" href="#">NANTOKA Works</a></h1>
+      <nav class="c-gnav" id="js-gnav">
+        <ul class="c-gnav__list">
+          <li class="c-gnav__item js-gnavItem"><a href="#service">サービス内容</a></li>
+          <li class="c-gnav__item js-gnavItem"><a href="#works">作成実績</a></li>
+          <li class="c-gnav__item js-gnavItem"><a href="#contact">コンタクト</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <button class="l-header__scrollTopButton" id="sj-scrollTopButton">
+      <i class="fas fa-lg fa-arrow-up"></i>
+      <div class="u-text--10">Top</div>
+    </button>
+
+  </header>
+
+  <main class="l-main">
+    <section class="p-homeVisual">
+      <h1 class="p-homeVisual__logo">NANTOKA Works</h1>
+      <h2 class="p-homeVisual__description">お客様のご要望を形にし、お客様の夢の実現をサポートするホームページを作成します</h2>
+      <p class="p-homeVisual__info">【お知らせ】これは架空のWeb制作会社のホームページです。ページ外リンクはダミーです。</p>
+    </section>
+
+    <section class="l-main" id="service">
+      <div class="l-main__fixedBackground">
+        <div class="c-title">
+          <h2 class="c-title__main">Service<br><span class="c-title__sub">サービス内容</span></h2>
+        </div>
+      </div>
+      <div class="l-main__flex">
+        <div class="c-card">
+          <img src="" alt="" class="c-img">
+          <h3 class="c-card__title">ホームページデザイン・作成</h3>
+          <p class="c-card__discription">お客様の目的に合ったホームページをご提案します。スマートフォンをはじめすべてのデバイスに対応します。</p>
+          <button type="button" class="c-button"><a href="#">MORE</a></button>
+
+        </div>
+        <div class="c-card">
+          <img src="" alt="" class="c-img">
+          <h3 class="c-card__title">運用サポート</h3>
+          <p class="c-card__discription">サイト公開後の更新作業はどなたでも無理なく行えるシステムとなっておりますが、ご要望に応じて運用のサポートを行います。</p>
+          バイスに対応します。</p>
+          <button type="button" class="c-button"><a href="#">MORE</a></button>
+
+        </div>
+        <div class="c-card">
+          <img src="" alt="" class="c-img">
+          <h3 class="c-card__title">アクセス解析・A/Bテスト</h3>
+          <p class="c-card__discription">アクセス解析やA/Bテストを行い、目的により合うようにサイトの改善をご提案します。</p>
+          バイスに対応します。</p>
+          <button type="button" class="c-button"><a href="#">MORE</a></button>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="l-main" id="works">
+      <div class="l-main__fixedBackground">
+        <div class="c-title">
+          <h2 class="c-title__main">Works<br><span class="c-title__sub">制作実績</span></h2>
+        </div>
+      </div>
+      <div class="l-main__flex">
+        <!-- スライダーのメインコンテナの div 要素（必須） -->
+        <div class="c-swiper">
+          <!-- スライドを囲む div 要素（必須） -->
+          <div class="c-swiper__wrapper">
+            <!-- それぞれのスライドの div 要素（必須） -->
+            <div class="c-swiper__slide"><img src="images/sample_01.png" alt=""></div>
+            <div class="c-swiper__slide"><img src="images/sample_02.png" alt=""></div>
+            <div class="c-swiper__slide"><img src="images/sample_03.png" alt=""></div>
+          </div>
+          <!-- ページネーションの div 要素（省略可能） -->
+          <div class="c-swiper__pagination"></div>
+
+          <!-- ナビゲーションボタンの div 要素（省略可能） -->
+          <div class="c-swiper__button-prev"></div>
+          <div class="c-swiper__button-next"></div>
+
+          <!-- スクロールバーの div 要素（省略可能） -->
+          <div class="c-swiper__scrollbar"></div>
+        </div>
+        <div><a href="#" class="c_button">View ALL</a></div>
+      </div>
+    </section>
+
+    <section class="l-main" id="contact">
+      <div class="l-main__fixedBackground">
+        <div class="c-title">
+          <h2 class="c-title__main">Contact<br><span class="c-title__sub">お問い合わせ</span></h2>
+        </div>
+      </div>
+      <div class="l-main__container">
+        <p class="c-title__text">Webサイトの制作のご依頼やお見積りなど、<br class="u-Only__sp">お気軽にご相談ください。</p>
+        <form class="c-form">
+          <div class="c-form__item">
+            <div class="c-form__title--must">お問い合わせ種別</div>
+            <div class="c-form__body">
+              <span class="c-form__radio">
+                <input id="question" type="radio" name="category" value="question" checked><label
+                  for="question">お仕事のご依頼・ご相談</label>
+              </span>
+              <span class="c-form__radio">
+                <input id="estimate" type="radio" name="category" value="estimate"><label
+                  for="estimate">お見積りのご依頼</label>
+              </span>
+              <span class="c-form__radio">
+                <input id="other" type="radio" name="category" value="other"><label for="other">その他</label>
+              </span>
+            </div>
+          </div>
+
+          <div class="c-form__item">
+            <label class="c-form__title--must" for="name">お名前</label>
+            <div class="c-form__body">
+              <input id="name" class="c-form__input--md" type="text" name="name">
+            </div>
+          </div>
+
+          <div class="c-form__item">
+            <label class="c-form__title--must" for="mail">メールアドレス</label>
+            <div class="c-form__body">
+              <input id="mail" class="c-form__input--md" type="email" name="mail">
+            </div>
+          </div>
+
+          <div class="c-form__item">
+            <label class="c-form__title" for="num">電話番号<span class="u-text--half">(半角数字ハイフンなし)<span></label>
+            <div class="c-form__body">
+              <input id="num" class="c-form__input--sm" type="text" name="tel">
+            </div>
+          </div>
+
+          <div class="c-form__item">
+            <label class="c-form__title--must" for="detail">お問い合わせ内容</label>
+            <div class="c-form__body">
+              <textarea class="c-form__textarea--lg" id="detail" class="textarea" name="detail" rows="10" cols="75"
+                placeholder="お問い合わせ内容を具体的にご記入くださいませ。"></textarea>
+            </div>
+          </div>
+
+        </form>
+
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="l-footer">
+
+    <div class="l-footer__inner u-align--left">
+      <p class="l-footer__postalCode">123-4567</p>
+      <address class="l-footer__address">京都市中京区烏丸六角下る</address>
+    </div>
+    <div class="l-footer__inner u-align--center">
+      <div class="l-footer__copyright">&copy;2021 NANTOKA Works</div>
+    </div>
+  </footer>
+</body>
+
+</html>

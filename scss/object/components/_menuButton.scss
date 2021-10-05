@@ -1,0 +1,16 @@
+.c-menuButton {
+  text-align: center;
+  padding: 5px;
+  position: relative;
+
+  &__text {
+    margin: 0 auto;
+    @include font-size(10);
+  }
+}
+
+@include mq(md) {
+  .c-menuButton {
+    display: none;
+  }
+}

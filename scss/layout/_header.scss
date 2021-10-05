@@ -1,0 +1,52 @@
+.l-header {
+  position: relative;
+
+  &__navSP {
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    background-color: yellow;
+  }
+
+  &__navPC {
+    display: none;
+  }
+
+  &__scrollTopButton {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+
+    background: $color_secondary;
+    text-align: center;
+  }
+}
+
+//   background: transparent;
+//   display: block;
+//   font-weight: bold;
+//   padding: 30px;
+//   position: fixed;
+//   top: 0px;
+//   left: 0;
+//   z-index: 10;
+//   transition: all 0.3s ease-in-out;
+
+//   &__inner {
+//     display: none;
+//   }
+// }
+
+// @include mq(md) {
+//   .l-header {
+
+//     &__inner {
+//       width: 100%;
+//       display: flex;
+//       justify-content: space-between;
+//     }
+//   }
+// }

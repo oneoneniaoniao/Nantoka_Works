@@ -1,0 +1,38 @@
+.c-hamburger {
+  height: 26px;
+  width: 26px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+
+  &__line {
+    position: relative;
+    top: 50%;
+    display: block;
+    width: 26px;
+    height: 2px;
+    border-radius: 2px;
+    background: $color_text;
+    transition: all 0.3s ease-in-out;
+
+    &::before,
+    &::after {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      content: '';
+      border-radius: 2px;
+      background: inherit;
+      transition: inherit;
+    }
+
+    &::before {
+      top: -8px;
+    }
+
+    &::after {
+      top: 8px;
+    }
+  }
+}

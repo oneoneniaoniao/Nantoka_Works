@@ -1,0 +1,32 @@
+html {
+  font-size: 100%;
+}
+
+body {
+  line-height: 1.8;
+  font-family: "Montserrat", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  color: $color_text;
+
+  @include font-size(15);
+  @include mq(md){
+    @include font-size(14);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+a {
+  transition: all 0.3s ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}

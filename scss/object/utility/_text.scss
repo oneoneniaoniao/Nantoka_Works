@@ -1,0 +1,5 @@
+@for $i from 1 to 40 {
+  .u-text--#{$i} {
+    @include font-size($i)
+  }
+}
