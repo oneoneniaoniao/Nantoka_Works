@@ -1,0 +1,28 @@
+.c-navSP {
+  padding-top: 20px;
+  color: $color_white;
+  background: $color_secondary;
+  color: $color_white;
+  font-weight: bold;
+  position: fixed;
+  height: 100vh;
+  left: -150px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    justify-content: space-between;
+  }
+
+  &.show{
+    left: 0;
+  }
+}

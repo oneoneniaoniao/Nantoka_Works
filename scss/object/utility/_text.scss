@@ -1,4 +1,4 @@
-@for $i from 1 to 40 {
+@for $i from 1 to 60 {
   .u-text--#{$i} {
     @include font-size($i)
   }

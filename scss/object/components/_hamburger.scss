@@ -1,29 +1,43 @@
 .c-hamburger {
-  height: 26px;
-  width: 26px;
-  display: block;
-  margin: 0 auto;
-  position: relative;
+  position: fixed;
+  width: 55px;
+  height: 50px;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid $color_white;
+  border-left: none;
+  bottom: 100px;
+  left: 0px;
+  text-align: center;
+  background-color: $color_secondary;
+  color: $color_white;
+  font-weight: bold;
+
+  &__inner {
+    margin-left: 17px;
+    margin-top: 3px;
+    width: 26px;
+    height: 26px;
+  }
 
   &__line {
     position: relative;
-    top: 50%;
+    top: 8px;
     display: block;
-    width: 26px;
-    height: 2px;
+    width: 100%;
+    height: 3px;
     border-radius: 2px;
-    background: $color_text;
+    background-color: $color_white;
     transition: all 0.3s ease-in-out;
 
     &::before,
     &::after {
+      display: block;
       position: absolute;
-      left: 0;
       width: 100%;
       height: 100%;
       content: '';
-      border-radius: 2px;
-      background: inherit;
+      border-radius: inherit;
+      background-color: inherit;
       transition: inherit;
     }
 
@@ -35,4 +49,36 @@
       top: 8px;
     }
   }
+
+
+
+  &__text {
+    @include font-size(10);
+    position: relative;
+    bottom:3px;
+    left: 3px;
+    line-height: 1;
+  }
+
+  &:hover {
+    background-color: $color_primary;
+  }
 }
+
+.c-hamburger.is_active {
+    .c-hamburger__line {
+      background-color: transparent;
+
+      &::before{
+        top: 0;
+        background-color: $color_white;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 0;
+        background-color: $color_white;
+        transform: rotate(-45deg);
+      }
+    }
+  }

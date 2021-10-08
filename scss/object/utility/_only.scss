@@ -1,0 +1,9 @@
+.u-only__SP{
+  display: block;
+}
+
+@include mq(md) {
+  .u-only__SP{
+    display: none;
+  }
+}

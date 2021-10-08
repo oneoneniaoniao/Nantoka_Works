@@ -12,33 +12,50 @@
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
     integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-  <!-- reset.css destyle
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css" /> -->
   <!-- style.css -->
   <link rel="stylesheet" href="./scss/style.css" />
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Noto+Sans+JP:wght@100;400;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
+  <div class="l-main__overlay" id="js-overlay"></div>
   <header class="l-header">
-    <button class="l-header__navSP" type="button" id="js-menuButton">
-      <div class="c-hamburger">
-        <span class="c-hamburger__line"></span>
-      </div>
-      <span class="c-menuButton__text">メニュー</span>
-    </button>
-
-    <div class="l-header__navPC">
-      <h1 class="c-logo"><a class="c-logo__inner u-text--22" href="#">NANTOKA Works</a></h1>
-      <nav class="c-gnav" id="js-gnav">
-        <ul class="c-gnav__list">
-          <li class="c-gnav__item js-gnavItem"><a href="#service">サービス内容</a></li>
-          <li class="c-gnav__item js-gnavItem"><a href="#works">作成実績</a></li>
-          <li class="c-gnav__item js-gnavItem"><a href="#contact">コンタクト</a></li>
+    <div class="l-header__navSP">
+      <nav class="c-navSP" id="js-navSP">
+        <h1 class="c-logo u-margin--bottom100"><a class="c-logo__inner u-text--22" href="#">NANTOKA Works</a></h1>
+        <ul class="c-navSP__list">
+          <li class="c-navSP__item js-navSP-item"><a href="#service">サービス内容</a></li>
+          <li class="c-navSP__item js-navSP-item"><a href="#works">作成実績</a></li>
+          <li class="c-navSP__item js-navSP-item"><a href="#contact">コンタクト</a></li>
         </ul>
       </nav>
+      <button class="c-hamburger" type="button" id="js-hamburger">
+        <div class="c-hamburger__inner">
+          <div class="c-hamburger__line"></div>
+        </div>
+        <div class="c-hamburger__text">Menu</div>
+      </button>
+
     </div>
 
-    <button class="l-header__scrollTopButton" id="sj-scrollTopButton">
+    <div class="l-header__inner" id="js-headerPC">
+      <div class="l-header__navPC">
+        <h1 class="c-logo"><a class="c-logo__inner u-text--26" href="#">NANTOKA Works</a></h1>
+        <nav class="c-navPC" id="js-nav">
+          <ul class="c-navPC__list">
+            <li class="c-navPC__item js-navItem"><a href="#service">サービス内容</a></li>
+            <li class="c-navPC__item js-navItem"><a href="#works">作成実績</a></li>
+            <li class="c-navPC__item js-navItem"><a href="#contact">コンタクト</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <button class="l-header__scrollTopButton" id="js-scrollTopButton">
       <i class="fas fa-lg fa-arrow-up"></i>
       <div class="u-text--10">Top</div>
     </button>
@@ -46,13 +63,16 @@
   </header>
 
   <main class="l-main">
-    <section class="p-homeVisual">
-      <h1 class="p-homeVisual__logo">NANTOKA Works</h1>
-      <h2 class="p-homeVisual__description">お客様のご要望を形にし、お客様の夢の実現をサポートするホームページを作成します</h2>
-      <p class="p-homeVisual__info">【お知らせ】これは架空のWeb制作会社のホームページです。ページ外リンクはダミーです。</p>
+    <section class="c-homeVisual">
+      <div class="c-homeVisual__inner">
+      <h1 class="c-homeVisual__logo c-logo u-margin--bottom50">NANTOKA Works</h1>
+      <h2 class="c-homeVisual__description">ホームページ制作を通じて<br class="u-only__SP">お客様のビジネスをサポートします
+        <br>デザイン・集客・販売促進・アフターサポートは<br class="u-only__SP">NANTOKA Worksにお任せ下さい</h2>
+      </div>
+      <div class="c-homeVisual__info"><p class="c-homeVisual__infoText">【お知らせ】これは架空のWeb制作会社のホームページです。ページ外リンクはダミーです。</p></div>
     </section>
 
-    <section class="l-main" id="service">
+    <section class="l-main__inner" id="service">
       <div class="l-main__fixedBackground">
         <div class="c-title">
           <h2 class="c-title__main">Service<br><span class="c-title__sub">サービス内容</span></h2>
@@ -166,7 +186,7 @@
           <div class="c-form__item">
             <label class="c-form__title--must" for="detail">お問い合わせ内容</label>
             <div class="c-form__body">
-              <textarea class="c-form__textarea--lg" id="detail" class="textarea" name="detail" rows="10" cols="75"
+              <textarea class="c-form__textarea--lg" id="detail" class="textarea" name="detail" rows="5" cols="30"
                 placeholder="お問い合わせ内容を具体的にご記入くださいませ。"></textarea>
             </div>
           </div>
@@ -189,6 +209,7 @@
       <div class="l-footer__copyright">&copy;2021 NANTOKA Works</div>
     </div>
   </footer>
+  <script type='text/javascript' src="js/script.js"></script>
 </body>
 
 </html>
