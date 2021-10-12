@@ -1,0 +1,48 @@
+.c-swiper {
+  padding: 15px;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+
+  &__flexWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__container {
+    padding: 40px 10px;
+    width: 90%;
+  }
+
+  &__description {
+    margin: 40px 20px;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+}
+
+// @include mq(lg) {
+//   .c-swiper {
+//     &__flexWrapper {
+//       flex-direction: row;
+//       margin: 30px auto;
+//       max-width: 1100px;
+
+//     }
+
+//     &__container {
+//       width: 60%;
+//       margin: 20px;
+//     }
+
+//     &__description {
+//       width: 40%;
+//     }
+//   }
+// }

@@ -1,0 +1,70 @@
+.c-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid $color_gray;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px $color_gray;
+  margin: 20px 10px;
+
+  &__image {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }
+
+  &__title {
+    text-align: center;
+    margin: 10px;
+    @include font-size(18);
+  }
+
+  &__description {
+    margin: 15px;
+  }
+
+}
+
+@include mq(sm) {
+  .c-card {
+    flex-direction: row;
+    align-items: center;
+
+    &__imageWrapper {
+      flex-shrink: 0;
+      width: 40%;
+      align-self: stretch;
+    }
+
+    &__image {
+      // object-fit: cover;
+      height: 100%;
+      border-radius: 10px 0 0 10px;
+    }
+
+    &__container {
+      text-align: center;
+      width: 60%;
+    }
+
+  }
+}
+
+@include mq(md) {
+  .c-card{
+    flex-direction: row;
+  }
+}
+
+
+@include mq(xl) {
+  .c-card{
+    &__title{
+      @include font-size(24);
+    }
+    &__description{
+      @include font-size(18);
+      margin: 25px;
+    }
+  }
+}

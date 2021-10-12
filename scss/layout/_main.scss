@@ -1,6 +1,6 @@
 .l-main {
   position: relative;
-  top: -70px;
+
   &__overlay.gray {
     position: fixed;
     top: 0;
@@ -11,4 +11,63 @@
     opacity: 0.4;
     transition: all 0.3s ease;
   }
+
+  &__inner {
+    margin-top: -40px;
+    padding-top: 40px;
+  }
+
+  &__fixedBackground {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    font-display: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin-bottom: 60px;
+
+    &--service {
+      background-image: linear-gradient(217deg, rgba(85, 67, 47, 0.3), rgba(223, 177, 126, 0.3)), url(../img/programming.jpg);
+    }
+
+    &--works {
+      background-image: linear-gradient(217deg, rgba(85, 67, 47, 0.1), rgba(223, 177, 126, 0.1)), url(../img/macImage.jpg);
+    }
+
+    &--contact {
+      background-image: linear-gradient(217deg, rgba(85, 67, 47, 0.2), rgba(223, 177, 126, 0.2)), url(../img/question.jpg);
+    }
+
+  }
+
+  &__scrollBackground {
+    &--works{
+      background: linear-gradient(180deg, white 40%, $color_gray 40%, );
+      margin: 0 0 50px;
+    }
+    &--contact{
+      margin: 30px auto;
+      max-width: 1000px;
+      text-align: center;
+    }
+  }
 }
+
+@include mq(lg){
+  .l-main__fixedBackground{
+    height: 260px;
+    margin-bottom: 100px;
+  }
+  .l-main__scrollBackground{
+    &--works{
+      // background: linear-gradient(90deg, white 40%, $color_gray 40%, );
+      // text-align: center;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+

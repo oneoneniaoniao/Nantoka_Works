@@ -1,0 +1,22 @@
+.c-title{
+  color: $color_white;
+  text-shadow: 0 0 10px #000;
+  &__main{
+    @include font-size(24);
+    letter-spacing: 0.4rem;
+  }
+  &__subTitle{
+    @include font-size(14)
+  }
+}
+
+@include mq(md){
+  .c-title{
+    &__main{
+      @include font-size(30);
+    }
+    &__subTitle{
+      @include font-size(20);
+    }
+  }
+}

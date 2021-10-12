@@ -1,0 +1,20 @@
+.c-telForm{
+  &__container{
+    color: $color_dark;
+    font-weight: bold;
+    @include font-size(24);
+  }
+}
+
+@include mq(sm){
+  .c-telForm__container{
+  @include font-size(30);
+  }
+}
+
+@include mq(md){
+  .c-telForm__container{
+  @include font-size(44);
+  }
+}
+

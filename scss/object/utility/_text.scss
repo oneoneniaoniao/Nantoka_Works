@@ -3,3 +3,15 @@
     @include font-size($i)
   }
 }
+
+.u-text--lg{
+  @include font-size(20);
+  font-weight: bold;
+}
+
+@include mq(md){
+  .u-text--lg{
+    @include font-size(24);
+  }
+  
+}

@@ -1,11 +1,14 @@
 // header固定
 const header = document.getElementById("js-headerPC");
+const headerLogo = document.getElementById("js-headerLogo")
 window.addEventListener("scroll", () => {
   let value = window.scrollY
-  if (value < 5) {
-    header.classList.remove("is_fixed");
-  } else if (value > 10) {
+  if (value > 0) {
     header.classList.add("is_fixed");
+    headerLogo.classList.add("is_fixed");
+  } else {
+    header.classList.remove("is_fixed");
+    headerLogo.classList.remove("is_fixed");
   }
 })
 
@@ -65,3 +68,31 @@ links.forEach((link) => {
     });
   });
 })
+
+
+var swiper = new Swiper('.swiper-container', {
+  // Optional parameters
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  speed: 500,
+  loop: true,
+  // effect: 'fade',
+  slidesPerView:2,  //スライドを2つ（分）表示
+  centeredSlides : true,  //アクティブなスライドを中央に表示
+  effect: 'coverflow',  //スライドのエフェクトを coverflow に
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+});

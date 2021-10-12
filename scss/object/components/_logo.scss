@@ -1,7 +1,10 @@
 .c-logo{
   font-family: 'Architects Daughter', cursive;
   line-height: 1;
-  &.c-logo__inner{
+  &__inner{
     line-height: 1;
+    &:hover{
+      // color: $color_dark;
+    }
   }
 }

@@ -9,3 +9,27 @@
     margin-bottom: #{$i*10}px;
   }
 }
+
+@for $i from 1 to 10 {
+  .u-margin--top#{$i} {
+    margin-top: #{$i}px;
+  }
+}
+
+@for $i from 1 to 20 {
+  .u-margin--left#{$i*10} {
+    margin-left: #{$i*10}px;
+  }
+}
+
+@for $i from 1 to 10 {
+  .u-margin--left#{$i} {
+    margin-left: #{$i}px;
+  }
+}
+
+@for $i from 1 to 20 {
+  .u-margin--top#{$i*10} {
+    margin-top: #{$i*10}px;
+  }
+}

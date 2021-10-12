@@ -1,0 +1,14 @@
+.l-footer{
+  background: $color_secondary;
+  &__inner{
+    max-width: 1100px;
+    padding: 20px;
+    text-align: right;
+    color: white;
+    text-shadow: 0px 0px 10px $color_dark;
+  }
+  &__copyright{
+    text-align: center;
+    font-size: 14px;
+  }
+}

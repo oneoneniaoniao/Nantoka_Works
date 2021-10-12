@@ -1,10 +1,32 @@
-.c-navPC{
+.c-navPC {
 
-  &__list{
+  &__list {
     font-weight: bold;
     display: flex;
   }
-  &__item{
-    margin-left: 20px;
+
+  &__item {
+    margin-left: 30px;
+    position: relative;
+    &:hover{
+      color:$color_dark;
+    }
+
+    &::after {
+      content: "";
+      height: 0;
+      width: 2px;
+      position: absolute;
+      left: 50%;
+      top: -10px;
+      background-color: $color_dark;
+      border-radius: 2px;
+      box-shadow: 0 0 5px $color_white;
+      transition: color, height 0.3s ease;
+    }
+
+    &:hover::after {
+      height: 13px;
+    }
   }
 }

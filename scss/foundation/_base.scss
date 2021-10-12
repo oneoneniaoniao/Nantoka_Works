@@ -7,11 +7,13 @@ body {
   font-family: 'Noto Sans JP', Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   color: $color_text;
 
-  @include font-size(15);
+  @include font-size(14);
   @include mq(md){
     @include font-size(15);
   }
-  
+  @include mq(lg){
+    @include font-size(16);
+  }
 }
 
 h1,
@@ -21,10 +23,6 @@ h4,
 h5,
 h6 {
   font-weight: bold;
-}
-
-a {
-  transition: all 0.3s ease-in-out;
 }
 
 img {

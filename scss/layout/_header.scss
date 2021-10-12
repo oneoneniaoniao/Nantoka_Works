@@ -1,13 +1,62 @@
 .l-header {
-  position: relative;
+  position: absolute;
   z-index: 10;
+  width: 100vw;
 
   &__navSP {
     position: fixed;
+    opacity: 1;
+    transition-property: opacity, visibility;
+    transition-delay: 0, 0.3s;
+    transition-duration: 0.2s, 0.2s;
+    transition-timing-function: ease-in-out;
   }
 
-  &__inner {
-    display: none;
+  &__logo{
+    position: fixed;
+    opacity:1;
+    width: 100%;
+    padding: 20px;
+    text-shadow: $color_white 0px 0px 10px;
+    transition-property: opacity, visibility, padding;
+    transition-delay: 0, 0.3s, 0;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    &.is_fixed {
+      padding: 10px 20px;
+      // color: $color_white;
+      // text-shadow: $color_dark 0px 0px 10px;
+      ;
+    }
+  }
+
+  &__navPC {
+    visibility: hidden;
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+    // transition: padding 0.2s ease;
+    text-shadow: $color_white 0px 0px 10px;
+    transition-property: opacity, visibility, padding;
+    transition-delay: 0, 0.3s, 0;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    &.is_fixed {
+      padding: 10px 20px;
+      background-color: $color_secondary;
+      color: $color_white;
+      text-shadow: $color_dark 0px 0px 10px;
+      ;
+    }
+  }
+
+  &__navPCinner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__scrollTopButton {
@@ -25,6 +74,7 @@
     font-weight: bold;
     transition: all 0.4s ease;
     opacity: 1;
+    visibility: hidden;
 
     &:hover {
       background: $color_primary;
@@ -36,32 +86,17 @@
   .l-header {
     &__navSP {
       visibility: hidden;
+      opacity: 0;
     }
 
-    &__inner {
-      display: block;
-      transition: all 0.2s ease;
-      text-shadow: white 0px 0px 5px;
-
-      &.is_fixed {
-        position: fixed;
-        width: 100%;
-        background-color: $color_secondary;
-        text-shadow: $color_primary 0px 0px 10px;;
-      .l-header__navPC{
-        padding: 10px 20px;
-        color: $color_white;
-      }
-      }
+    &__logo{
+      visibility: hidden;
+      opacity: 0;
     }
 
     &__navPC {
-      padding: 20px 20px;
-      max-width: 1100px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      visibility: visible;
+      opacity: 1;
     }
   }
 }
